@@ -1,0 +1,27 @@
+
+	Old setup: [java 8]
+    <java.version>1.8</java.version>
+    
+    New setup: [java 17]
+    <java.version>17</java.version>
+    
+    **** Spring Boot 3.1.0 ==> only works with Java/JDK 17 *****
+    
+    earlier i was trying to run spring boot 3.1.0 with java 8(i.e 1.8) //so it was giving lot of issues.
+    
+    Step1:
+    ======
+    I downloaded Java/Jdk 17 from this page. 
+    https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+    
+    Windows x64 Installer	
+    153.92 MB	
+	https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe (sha256 )
+
+    step2:
+    ======
+    Then setup java/jdk path in eclipse java build path.. "Build path" -> "Configure build path"...
+    And also in "Run as" -> "Run configurations"
+    
+    
+    

@@ -1,0 +1,41 @@
+
+1. Use application.yml file instead of application.properties. //when dealing with complex configurations.
+
+NOTE: yaml is superset of JSON and provides a more structured and readable way to define hierarchical configuration data.
+
+application.properties:
+-----------------------
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/<YOUR_DATABASE_NAME>
+spring.datasource.username=<YOUR_USERNAME>
+spring.datasource.password=<YOUR_PASSWORD>
+spring.jpa.hibernate.ddl-auto=<create | create-drop | update | validate | none>
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+application.yaml:
+-----------------
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/<YOUR_DATABASE_NAME>
+    username: <YOUR_USERNAME>
+    password: <YOUR_PASSWORD>
+  jpa:
+    hibernate:
+      ddl-auto: <create | create-drop | update | validate | none>
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+
+2.  
+
+
+
+
+links:
+
+https://hackernoon.com/using-postgres-effectively-in-spring-boot-applications
+
+

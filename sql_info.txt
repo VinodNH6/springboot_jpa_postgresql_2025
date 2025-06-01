@@ -1,0 +1,46 @@
+
+ > psql -U postgres
+
+ > \l  		
+ 
+ NOTE: this will return list of databases available.
+
+ 
+ > \c productdb   
+ 
+ NOTE: switch to "productdb" database.
+ 
+ 
+ > \dt 		
+ 
+ NOTE: it shows list of tables exists in "productdb" database.
+ 
+ 
+ 
+
+ > DROP TABLE products;
+
+ > CREATE TABLE products ( id SERIAL PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), price INT);
+
+ > INSERT INTO products (id, name, description, price) VALUES ('1', 'car', 'hatchback', '800000');
+
+ > select * from products;
+ 
+ NOTE: show all data from "products" table.
+
+
+
+
+
+
+
+Links:
+======
+https://www.w3schools.com/postgresql/postgresql_create_table.php
+
+https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql
+
+https://phoenixnap.com/kb/how-to-connect-postgresql-database-command-line
+
+https://www.freecodecamp.org/news/manage-postgresql-with-psql/
+
